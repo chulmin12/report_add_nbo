@@ -26,6 +26,8 @@ int main(int argc, char *argv[]) {
     int x = htonl(getByte(argv[1]));
     int y = htonl(getByte2(argv[1]));
     printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", x, x, y, y, x+y, x+y);
+    char name[] = "황철민";
+    printf("[sdev][%s]add-nbo",name);
 
     return 0;
 }
